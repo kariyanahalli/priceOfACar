@@ -74,6 +74,21 @@ After ColumnTransformer(s) we can get replace the missing Numeric values with it
 ### More fine tuning
 Needs more fine tuning. 
 
+#### LassoCV model
+With OHE did NOT converge. Gave up!!
+
+#### SGDRegressor model
+Gave somewhat better results after playing with 
+```
+    l1_ratio=0.1,          
+    alpha=3e-3,
+```
+Yielded ..
+```
+RMSE: 18,342.62
+R2:   -1.8105
+```
+Makes sure 
 ### Deployment
 #### Vehicle Age and Mileage
 
